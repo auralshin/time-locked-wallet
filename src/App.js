@@ -71,7 +71,40 @@ const App = () => {
       </div>
       </TabPane>
       <TabPane tabId="2">
-      Hello
+      <div className="table-ripe">
+        <table>
+    
+          <tr>
+            <th>Address</th>
+            <th>Time Left</th>
+            <th>Claim</th>
+          </tr>
+        
+          
+            <tr>
+              <td>this is it`</td>
+              <td>topwndcv okfi</td>
+              <td><Button color="info" style={{width:"75%"}}>Claim</Button></td>
+            </tr>
+            <tr>
+              <td>this is it`</td>
+              <td>topwndcv okfi</td>
+              <td><Button color="info" style={{width:"75%"}}>Claim</Button></td>
+            </tr>
+            <tr>
+              <td>this is it`</td>
+              <td>topwndcv okfi</td>
+              <td><Button color="info" style={{width:"75%"}}>Claim</Button></td>
+            </tr>
+            <tr>
+              <td>this is it`</td>
+              <td>topwndcv okfi</td>
+              <td><Button color="info" style={{width:"75%"}}>Claim</Button></td>
+            </tr>
+            
+     
+        </table>
+      </div>
      </TabPane>
 
       </TabContent>
