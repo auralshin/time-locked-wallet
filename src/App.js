@@ -70,6 +70,10 @@ const App = () => {
       </div>
       </div>
       </TabPane>
+      <TabPane tabId="2">
+      Hello
+     </TabPane>
+
       </TabContent>
     </div>
   );
