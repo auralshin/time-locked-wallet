@@ -1,90 +1,38 @@
-:root {
-  background-color: #F4F4F4;
-  height: 100vh;
+.App {
   text-align: center;
 }
 
-.header {
-  margin: 0;
-  width: 100vb;
-  height: 35vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background: #0F2027;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
 }
-.header p {
-  margin: 0;
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
   color: white;
-  font-weight: bold;
-  font-size: 60px;
-  font-family: 'Style Script', cursive;
 }
 
-.cards-list {
-  z-index: 0;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-.card {
-  margin: 30px auto;
-  width: 800px;
-  height: 400px;
-  border-radius: 15px;
-  box-shadow: 5px 5px 10px 7px rgba(0, 0, 0, 0.25);
-  cursor: pointer;
-  transition: 0.4s ease-in-out;
-  background-image: url("https://i.redd.it/b3esnz5ra34y.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 40px;
-
-}
-.card .card_image {
-  width: inherit;
-  height: inherit;
-  border-radius: 40px;
+.App-link {
+  color: #61dafb;
 }
 
-.form {
-  padding: 10px;
-}
-/* .card:hover {
-  transform: scale(0.95, 0.95);
-  box-shadow: -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
-} */
-.button-submit {
-  width: 50%;
-  float:right;
-}
-.button-info {
-  width: 100%;
-}
-.table-ripe {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-.table-ripe table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-.table-ripe td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
-
-.table-ripe tr:nth-child(even) {
-  background-color: #dddddd;
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
