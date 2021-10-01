@@ -4,6 +4,7 @@ contract TimeLock {
     address payable public accountholder;
     mapping (address => uint256) public amount;
     mapping (address => uint256) public unlocktime;
+    
     constructor (
         address payable _accountholder,
          uint256 unlocktime, uint256 amount
@@ -15,6 +16,12 @@ contract TimeLock {
        accountholder = _accountholder;
        
     }
+    
+    modifier onlyOwner {
+      require(msg.sender == owner);
+      _;
+   }
+    
     function deposit() public payable {
         amount[msg.sender] = msg.value;
     }
